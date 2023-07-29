@@ -1,5 +1,6 @@
 /**
  * LongestCommonPrefix:
+ * https://leetcode.com/problems/longest-common-prefix/
  *
  * Input: strs = ["flower","flow","flight"]
  * Output: "fl"
@@ -41,6 +42,12 @@
  *
  * the key would combine the letter and index and the value would be occurances
  * below is the algo in practice using data structure above.
+ *
+ * Side note: A better solution I came across after solving this was sorting the array via .sort
+ * looping through the first word and comparing it to the last word until no match is found:
+ * (strs[0][i] !== strs[strs.length - 1][i]) return strs[0].substring(0, i)
+ *
+ * could've used (.slice, .substring) edit in place.
  */
 
 /**
