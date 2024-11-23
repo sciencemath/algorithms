@@ -1,6 +1,7 @@
 /**
  * input: haystack = "sadbutsad", needle = "sad"
  * output: first index of the found word, 0 in this case
+ * if not found -1
  * 
  * My first thought is indexOf, testing with regex is
  * slower but gives more flexible matching
