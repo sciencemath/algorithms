@@ -31,3 +31,13 @@ const climbStairs = (n, memo = {}) => {
   memo[n] = climbStairs(n - 1, memo) + climbStairs(n - 2, memo)
   return memo[n]
 };
+
+/**
+ * Binet’s formula
+ * @param {number} n
+ * @return {number}
+ */
+const climbStairsBinet = (n) => {
+  const sqrt5 = Math.sqrt(5);
+  return Math.round(((1 + sqrt5) / 2) ** (n + 1) / sqrt5);
+};
